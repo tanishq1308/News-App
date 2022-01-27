@@ -17,6 +17,7 @@
 		209B3D1027A0023D002E2BF1 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B3D0F27A0023D002E2BF1 /* ContentModel.swift */; };
 		209B3D1227A01070002E2BF1 /* NewsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B3D1127A01070002E2BF1 /* NewsDetail.swift */; };
 		209B3D1427A02499002E2BF1 /* NewsHeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B3D1327A02499002E2BF1 /* NewsHeadline.swift */; };
+		20B67E7827A2B9B700D43F3D /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B67E7727A2B9B700D43F3D /* LaunchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		209B3D0F27A0023D002E2BF1 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		209B3D1127A01070002E2BF1 /* NewsDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetail.swift; sourceTree = "<group>"; };
 		209B3D1327A02499002E2BF1 /* NewsHeadline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHeadline.swift; sourceTree = "<group>"; };
+		20B67E7727A2B9B700D43F3D /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		20B67E7927A2C61400D43F3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 		209B3CF5279FFE25002E2BF1 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				20B67E7927A2C61400D43F3D /* Info.plist */,
 				209B3CF6279FFE25002E2BF1 /* NewsApp.swift */,
 				209B3D05279FFE6A002E2BF1 /* Views */,
 				209B3D06279FFE9E002E2BF1 /* ViewModels */,
@@ -85,6 +89,7 @@
 		209B3D05279FFE6A002E2BF1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				20B67E7727A2B9B700D43F3D /* LaunchView.swift */,
 				209B3CF8279FFE25002E2BF1 /* ContentView.swift */,
 				209B3D1327A02499002E2BF1 /* NewsHeadline.swift */,
 				209B3D1127A01070002E2BF1 /* NewsDetail.swift */,
@@ -194,6 +199,7 @@
 				209B3D1427A02499002E2BF1 /* NewsHeadline.swift in Sources */,
 				209B3D0A279FFEEA002E2BF1 /* Constants.swift in Sources */,
 				209B3D1027A0023D002E2BF1 /* ContentModel.swift in Sources */,
+				20B67E7827A2B9B700D43F3D /* LaunchView.swift in Sources */,
 				209B3D1227A01070002E2BF1 /* NewsDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +334,7 @@
 				DEVELOPMENT_TEAM = GKLSTM9253;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = News/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -357,6 +364,7 @@
 				DEVELOPMENT_TEAM = GKLSTM9253;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = News/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

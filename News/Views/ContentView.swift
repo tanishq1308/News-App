@@ -15,7 +15,6 @@ struct ContentView: View {
     
     var body: some View {
         
-        NavigationView {
             
             if model.news.count >= 1 {
                 TabView(selection: $tabSelectionIndex) {
@@ -33,12 +32,13 @@ struct ContentView: View {
                             }
                             .accentColor(.black)
                     }
-                    .navigationTitle("India Today")
+                    .navigationTitle("\(Constants.country[Constants.country_code.firstIndex(of: model.country)!]) Today")
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .never))
             }
-            
+        else {
+            ProgressView()
         }
     }
 }

@@ -34,8 +34,8 @@ class News: Decodable, Identifiable, ObservableObject {
     }
     func getImageData() {
 
-        guard urlToImage != nil else {
-            return
+        if urlToImage == nil {
+            urlToImage = Constants.noImage
         }
 
         if let url = URL(string: urlToImage!) {

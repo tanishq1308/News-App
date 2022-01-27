@@ -40,7 +40,7 @@ struct NewsDetail: View {
                 }
                 .padding(.horizontal, 15)
             }
-            .navigationTitle(news.source?.name ?? "")
+            .navigationTitle(news.source?.name ?? "Sources")
         }
     }
 }

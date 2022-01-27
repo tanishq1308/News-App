@@ -35,12 +35,12 @@ struct NewsHeadline: View {
                         .padding(.top, 45)
                         .padding(.leading, 10)
                     
-                    Text(news.title ?? "")
+                    Text(news.title ?? "No title...")
                         .font(.title)
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal)
                     
-                    Text(news.description ?? "")
+                    Text(news.description ?? "Tap to read more...")
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal)
                     

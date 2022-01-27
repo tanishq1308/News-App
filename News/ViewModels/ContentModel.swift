@@ -12,15 +12,8 @@ class ContentModel: ObservableObject {
  
     var styleData: Data?
     
-    @State var country = "in"
-    
+    @Published var country = ""
     @Published var news = [News]()
-    
-    init() {
-        
-        getNews(country: self.country)
-        
-    }
     
     func getString(url: String) -> String {
         
@@ -32,7 +25,7 @@ class ContentModel: ObservableObject {
                 print(error)
             }
         }
-        return "Hello"
+        return Constants.noNews
     }
     
     func addStyling(htmlString: String) -> String {
@@ -60,6 +53,7 @@ class ContentModel: ObservableObject {
     
     func getNews(country: String) {
         
+        self.country = country
         var urlComponents = URLComponents(string: Constants.apiUrl)
         urlComponents?.queryItems = [
             URLQueryItem(name: "country", value: country),
