@@ -43,6 +43,7 @@ struct NewsHeadline: View {
                     Text(news.description ?? "Tap to read more...")
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal)
+                        .padding(.bottom, 10)
                     
                     Spacer()
                     

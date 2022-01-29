@@ -11,6 +11,6 @@ struct NewsGroup: Decodable {
     
     var status = ""
     var totalResults = 0
-    var articles = [News]()
+    var articles = [News()]
     
 }
