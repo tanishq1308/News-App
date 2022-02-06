@@ -18,4 +18,9 @@ struct Constants {
     static var noImage = "https://previews.123rf.com/images/hollygraphic/hollygraphic1301/hollygraphic130100016/17177197-black-question-mark-from-question-words.jpg?fj=1"
     
     static var noNews = "Complete news not available. Still collecting information."
+    
+    static var category = ["ALL CATEGORIES", "BUSINESS", "ENTERTAINMENT", "HEALTH", "SCIENCE", "SPORTS", "TECHNOLOGY"]
+    
+    static var category_code = ["all", "business", "entertainment", "health", "science", "sports", "technology"]
+    
 }

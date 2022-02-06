@@ -20,7 +20,7 @@ struct NewsHeadline: View {
                 Rectangle()
                     .foregroundColor(.white)
                     .cornerRadius(10)
-                    .frame(height: 600)
+                    .frame(height: 580)
                     .shadow(radius: 5)
                 
                 VStack(alignment: .leading, spacing: 20) {

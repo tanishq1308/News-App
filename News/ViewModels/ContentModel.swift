@@ -13,6 +13,7 @@ class ContentModel: ObservableObject {
     var styleData: Data?
     
     @Published var country = ""
+    @Published var category = ""
     @Published var news = [News]()
     
     func getString(url: String) -> String {
@@ -51,14 +52,24 @@ class ContentModel: ObservableObject {
         
     }
     
-    func getNews(country: String) {
+    func getNews(country: String, category: String) {
         
         self.country = country
+        self.category = category
         var urlComponents = URLComponents(string: Constants.apiUrl)
-        urlComponents?.queryItems = [
-            URLQueryItem(name: "country", value: country),
-            URLQueryItem(name: "apiKey", value: Constants.apiKey)
-        ]
+        if category != "all" {
+            urlComponents?.queryItems = [
+                URLQueryItem(name: "country", value: country),
+                URLQueryItem(name: "category", value: category),
+                URLQueryItem(name: "apiKey", value: Constants.apiKey)
+            ]
+        }
+        else {
+            urlComponents?.queryItems = [
+                URLQueryItem(name: "country", value: country),
+                URLQueryItem(name: "apiKey", value: Constants.apiKey)
+            ]
+        }
         let url = urlComponents?.url
         
         if let url = url {
