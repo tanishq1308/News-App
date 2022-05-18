@@ -11,10 +11,6 @@ struct AboutApp: View {
     var body: some View {
         
         VStack(spacing: 5) {
-            Text("ABOUT")
-                .bold()
-                .font(.largeTitle)
-                .padding(.top, 20)
             Spacer()
             Text("API used in this app is provided by India Today.")
                 .font(Font.custom("Avenir Heavy", size: 16))
@@ -24,6 +20,7 @@ struct AboutApp: View {
                 .font(Font.custom("Avenir Heavy", size: 22))
             Spacer()
         }
+        .navigationTitle("ABOUT")
         .padding()
     }
 }

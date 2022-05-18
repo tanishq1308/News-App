@@ -106,10 +106,6 @@ struct LaunchView: View {
             
             NavigationView {
                 VStack(spacing:20) {
-                    
-                    Text("App Settings")
-                        .bold()
-                        .font(.title)
                     Divider()
                     HStack {
                         
@@ -128,7 +124,7 @@ struct LaunchView: View {
                             Image(systemName: "arrow.right")
                         }
                     })
-                    .navigationBarHidden(true)
+                    .navigationBarTitle("Settings")
                     Divider()
                     Spacer()
                 }
