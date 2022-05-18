@@ -16,6 +16,7 @@ struct LaunchView: View {
     @State var tabIndex = 0
     @State var theme = false
     @State var lock = false
+    @State var showAbout = false
     
     var body: some View {
         
@@ -103,25 +104,36 @@ struct LaunchView: View {
             }
             .tag(0)
             
-            VStack {
-                
-                Text("App Settings")
-                    .bold()
-                    .font(.title)
-                
-                HStack {
+            NavigationView {
+                VStack(spacing:20) {
                     
-                    Toggle(isOn: $theme) {
-                        Text("Dark Mode")
-                            .font(.title2)
+                    Text("App Settings")
+                        .bold()
+                        .font(.title)
+                    Divider()
+                    HStack {
+                        
+                        Toggle(isOn: $theme) {
+                            Text("Dark Mode")
+                                .font(.title2)
+                        }
+                        
                     }
-                    
+                    Divider()
+                    NavigationLink(destination: AboutApp(), label: {
+                        HStack {
+                            Text("About")
+                                .font(.title2)
+                            Spacer()
+                            Image(systemName: "arrow.right")
+                        }
+                    })
+                    .navigationBarHidden(true)
+                    Divider()
+                    Spacer()
                 }
-                .padding(.top, 20)
-                
-                Spacer()
+                .padding(.all, 40)
             }
-            .padding(.all, 40)
             .tabItem {
                 VStack {
                     Image(systemName: "gear")
