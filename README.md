@@ -1,0 +1,3 @@
+# News-App
+
+<img width="350" alt="Screenshot 2022-06-06 at 10 21 57 AM" src="https://user-images.githubusercontent.com/73153087/172097103-064f008c-5b4f-4ec1-895e-cc8c50d8d408.png"><img width="350" alt="Screenshot 2022-06-06 at 10 22 17 AM" src="https://user-images.githubusercontent.com/73153087/172097113-84bfc4be-bb47-4703-a5b4-4f4f702d1338.png">           <img width="350" alt="Screenshot 2022-06-06 at 10 22 34 AM" src="https://user-images.githubusercontent.com/73153087/172097117-a6a0a77b-561a-4e6d-9256-a5fd4fbd441f.png"><img width="350" alt="Screenshot 2022-06-06 at 10 22 54 AM" src="https://user-images.githubusercontent.com/73153087/172097122-9015a195-6558-442a-972c-6daf580e3e26.png">
